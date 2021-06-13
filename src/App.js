@@ -12,7 +12,7 @@ import './App.css';
 
 //You must add your own API key here from Clarifai.
 const app = new Clarifai.App({
- apiKey: 'YOUR API KEY HERE'
+ apiKey: '7b95cfd058694066b6ac9fa6b49a0df7'
 });
 
 const particlesOptions = {
@@ -89,7 +89,7 @@ class App extends Component {
         // so you would change from:
         // .predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
         // to:
-        // .predict('c0c0ac362b03416da06ab3fa36fb58e3', this.state.input)
+        // .predict('7b95cfd058694066b6ac9fa6b49a0df7', this.state.input)
         Clarifai.FACE_DETECT_MODEL,
         this.state.input)
       .then(response => {
